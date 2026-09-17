@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Donation Form</title>
+    <meta charset="UTF-8">
+    <title>Donation Form</title>
 </head>
 <body>
-  <h1>Donation Form</h1>
-  <form>
+    <h1>Donation Form</h1>
+    <form>
     
-    Full Name:
-    <input type="text" name="name"></input>
+    <label for="name">Full Name:</label>
+    <input required id="name" type="text" name="name">
 
-    Email Address:
-    <input type="text" name="email">
+    <label for="email">Email Address:</label>
+    <input  required id="email" type="email" name="email">
 
-    Donation Amount ($):
-    <input type="number" name="amount"></input>
+    <label for="number">Donation Amount ($):</label>
+    <input required id="number" type="number" name="amount">
+    
 
-    <input type="checkbox" name="newsletter"></input>
-    Subscribe
+    <input  id="newsletter" type="checkbox" name="newsletter">
+    <label for="newsletter">Subscribe</label>
 
-    <input type="submit" value="Send"></input>
-  </form>
+    <input type="submit" value="Send">
+    </form>
 </body>
 </html>
